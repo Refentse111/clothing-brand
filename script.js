@@ -1,4 +1,4 @@
-// Image Slider
+// Image Slider for Front/Back photos
 document.querySelectorAll('.slider-container').forEach(container => {
     const images = JSON.parse(container.getAttribute('data-images'));
     let currentIndex = 0;
