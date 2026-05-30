@@ -10,40 +10,26 @@
     <header>
         <h1>STND</h1>
         <nav>
-            <a href="#about">About Us</a>
-            <a href="#shop">Shop</a>
-            <a href="#lookbook">Lookbook</a>
-            <a href="#contact">Contact</a>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Lookbook</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
 
     <section class="hero">
         <h2>NOT TREND PROCEDURE</h2>
         <p>Deliveries Nationwide</p>
-        <button onclick="document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
+        <button>Shop Now</button>
     </section>
 
-    <section id="about" class="about-section">
-        <h2>About Us</h2>
-        <div class="about-story">
-            <p>It started with a simple idea: why follow trends… when you can set the standard?</p>
-            <p>STND wasn't built for everyone. It was built for the ones who move different — the ones who don't wait for permission, the ones who turn everyday life into a statement.</p>
-            <p>Where we come from, nothing is handed to you. You earn your place. You build your name. And when you step out, what you wear isn't just style — it's identity.</p>
-            <p>STND stands for Standard Procedure — not the ordinary routine… but the code you live by.</p>
-            <p>Precision. Confidence. Discipline. Every piece is designed to reflect that mindset: clean, bold, and unapologetically elevated.</p>
-            <p>This is more than clothing. It's a uniform for people who know who they are — and don't need validation.</p>
-            <p>We don't chase hype. We create presence.</p>
-            <p>STND isn't what you wear. It's who you become.</p>
-        </div>
-    </section>
-
-    <section id="shop" class="products">
-        <h2>Shop</h2>
+    <section class="products">
+        <h2>Bestsellers</h2>
         <div class="product-grid">
-            <!-- White Tee -->
+            <!-- White Tee with Swipe -->
             <div class="product">
-                <div class="slider-container" data-images='["images/WhatsApp Image 2026-05-30 at 18.58.02.jpeg", "images/WhatsApp Image 2026-05-30 at 18.58.02 (1).jpeg"]'>
-                    <img class="slider-image" src="images/WhatsApp Image 2026-05-30 at 18.58.02.jpeg" alt="Classic White Tee">
+                <div class="slider-container" data-images='["images/white-front.jpeg", "images/white-back.jpeg"]'>
+                    <img class="slider-image" src="images/white-front.jpeg" alt="Classic White Tee">
                     <button class="slider-prev">❮</button>
                     <button class="slider-next">❯</button>
                 </div>
@@ -53,7 +39,7 @@
                 <div class="swipe-hint">← swipe / click →</div>
             </div>
 
-            <!-- Black Tee -->
+            <!-- Black Tee with Swipe -->
             <div class="product">
                 <div class="slider-container" data-images='["images/blackFront.png", "images/blackBack.png"]'>
                     <img class="slider-image" src="images/blackFront.png" alt="Classic Black Tee">
@@ -68,60 +54,19 @@
 
             <!-- Hoodie -->
             <div class="product">
-                <div class="slider-container" data-images='["https://placehold.co/300x400?text=Hoodie+Front", "https://placehold.co/300x400?text=Hoodie+Back"]'>
-                    <img class="slider-image" src="https://placehold.co/300x400?text=Hoodie+Front" alt="Oversized Hoodie">
-                    <button class="slider-prev">❮</button>
-                    <button class="slider-next">❯</button>
-                </div>
+                <img src="https://placehold.co/300x400?text=STND+Hoodie" alt="Hoodie">
                 <h3>Oversized Hoodie</h3>
                 <p>R 899</p>
                 <button class="add-to-cart">Add to Cart</button>
-                <div class="swipe-hint">← swipe / click →</div>
             </div>
 
-            <!-- Cargos -->
+            <!-- Cargo Pants -->
             <div class="product">
-                <div class="slider-container" data-images='["https://placehold.co/300x400?text=Cargo+Front", "https://placehold.co/300x400?text=Cargo+Back"]'>
-                    <img class="slider-image" src="https://placehold.co/300x400?text=Cargo+Front" alt="Cargo Pants">
-                    <button class="slider-prev">❮</button>
-                    <button class="slider-next">❯</button>
-                </div>
+                <img src="https://placehold.co/300x400?text=STND+Cargo" alt="Cargo">
                 <h3>Cargo Pants</h3>
                 <p>R 1 199</p>
                 <button class="add-to-cart">Add to Cart</button>
-                <div class="swipe-hint">← swipe / click →</div>
             </div>
-        </div>
-    </section>
-
-    <section id="lookbook" class="lookbook">
-        <h2>Lookbook</h2>
-        <div class="lookbook-grid">
-            <div class="lookbook-item">
-                <img src="https://placehold.co/400x500?text=Look+1" alt="Look 1">
-                <p>Standard Tee - Black</p>
-            </div>
-            <div class="lookbook-item">
-                <img src="https://placehold.co/400x500?text=Look+2" alt="Look 2">
-                <p>Oversized Hoodie - Grey</p>
-            </div>
-            <div class="lookbook-item">
-                <img src="https://placehold.co/400x500?text=Look+3" alt="Look 3">
-                <p>Cargo Pants - Olive</p>
-            </div>
-            <div class="lookbook-item">
-                <img src="https://placehold.co/400x500?text=Look+4" alt="Look 4">
-                <p>Standard Tee - White</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p>📞 Contact Number: <a href="tel:+27663463222">066 346 3222</a></p>
-            <p>✉️ Email: <a href="mailto:stnd.procedure@gmail.com">stnd.procedure@gmail.com</a></p>
-            <p>📷 Instagram: <a href="https://instagram.com/stnd_za" target="_blank">@stnd_za</a></p>
         </div>
     </section>
 
