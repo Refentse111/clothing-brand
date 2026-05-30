@@ -38,3 +38,58 @@
     margin-top: 0.5rem;
     text-align: center;
 }
+
+/* Lookbook Gallery - No text */
+.lookbook-item p {
+    display: none;
+}
+
+.lookbook-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.lookbook-item img:hover {
+    transform: scale(1.03);
+}
+
+/* Contact Section */
+.contact-section {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.contact-info p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: #111;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Logo styling */
+.logo {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+/* Adjust for mobile */
+@media (max-width: 768px) {
+    .logo {
+        height: 40px;
+    }
+}
