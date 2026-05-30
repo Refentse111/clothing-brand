@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>STND - Standard Procedure</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,10 +20,9 @@
     <section class="hero">
         <h2>NOT TREND PROCEDURE</h2>
         <p>Deliveries Nationwide</p>
-        <button>Shop Now</button>
+        <button onclick="document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
     </section>
 
-    <!-- About Us Section -->
     <section id="about" class="about-section">
         <h2>About Us</h2>
         <div class="about-story">
@@ -38,26 +37,63 @@
         </div>
     </section>
 
-    <!-- Shop Section -->
     <section id="shop" class="products">
         <h2>Shop</h2>
         <div class="product-grid">
+            <!-- White Tee -->
             <div class="product">
-                <img src="https://placehold.co/300x400?text=STND+Tee" alt="STND T-shirt">
+                <div class="slider-container" data-images='["images/white-front.jpg", "images/white-back.jpg"]'>
+                    <img class="slider-image" src="images/white-front.jpg" alt="Classic White Tee">
+                    <button class="slider-prev">❮</button>
+                    <button class="slider-next">❯</button>
+                </div>
                 <h3>Classic White Tee</h3>
                 <p>R 450</p>
-                <button>Add to Cart</button>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="swipe-hint">← swipe / click →</div>
             </div>
+
+            <!-- Black Tee -->
             <div class="product">
-                <img src="https://placehold.co/300x400?text=STND+Hoodie" alt="Hoodie">
+                <div class="slider-container" data-images='["images/black-front.jpg", "images/black-back.jpg"]'>
+                    <img class="slider-image" src="images/black-front.jpg" alt="Classic Black Tee">
+                    <button class="slider-prev">❮</button>
+                    <button class="slider-next">❯</button>
+                </div>
                 <h3>Classic Black Tee</h3>
                 <p>R 450</p>
-                <button>Add to Cart</button>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="swipe-hint">← swipe / click →</div>
+            </div>
+
+            <!-- Hoodie -->
+            <div class="product">
+                <div class="slider-container" data-images='["https://placehold.co/300x400?text=Hoodie+Front", "https://placehold.co/300x400?text=Hoodie+Back"]'>
+                    <img class="slider-image" src="https://placehold.co/300x400?text=Hoodie+Front" alt="Oversized Hoodie">
+                    <button class="slider-prev">❮</button>
+                    <button class="slider-next">❯</button>
+                </div>
+                <h3>Oversized Hoodie</h3>
+                <p>R 899</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="swipe-hint">← swipe / click →</div>
+            </div>
+
+            <!-- Cargos -->
+            <div class="product">
+                <div class="slider-container" data-images='["https://placehold.co/300x400?text=Cargo+Front", "https://placehold.co/300x400?text=Cargo+Back"]'>
+                    <img class="slider-image" src="https://placehold.co/300x400?text=Cargo+Front" alt="Cargo Pants">
+                    <button class="slider-prev">❮</button>
+                    <button class="slider-next">❯</button>
+                </div>
+                <h3>Cargo Pants</h3>
+                <p>R 1 199</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="swipe-hint">← swipe / click →</div>
             </div>
         </div>
     </section>
 
-    <!-- Lookbook Section (Catalogue) -->
     <section id="lookbook" class="lookbook">
         <h2>Lookbook</h2>
         <div class="lookbook-grid">
@@ -77,18 +113,9 @@
                 <img src="https://placehold.co/400x500?text=Look+4" alt="Look 4">
                 <p>Standard Tee - White</p>
             </div>
-            <div class="lookbook-item">
-                <img src="https://placehold.co/400x500?text=Look+5" alt="Look 5">
-                <p>Hoodie + Cargo Combo</p>
-            </div>
-            <div class="lookbook-item">
-                <img src="https://placehold.co/400x500?text=Look+6" alt="Look 6">
-                <p>Limited Edition Drop</p>
-            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <h2>Contact</h2>
         <div class="contact-info">
