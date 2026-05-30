@@ -8,22 +8,23 @@
 </head>
 <body>
     <header>
-        <h1>STND</h1>
+        <img src="images/logo.jpeg" alt="STND Logo" class="logo">
         <nav>
             <a href="#">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">Lookbook</a>
-            <a href="#">Contact</a>
+            <a href="#shop">Shop</a>
+            <a href="#lookbook">Lookbook</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section class="hero">
         <h2>NOT TREND PROCEDURE</h2>
         <p>Deliveries Nationwide</p>
-        <button>Shop Now</button>
+        <button onclick="document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
     </section>
 
-    <section class="products">
+    <!-- Shop Section -->
+    <section id="shop" class="products">
         <h2>Bestsellers</h2>
         <div class="product-grid">
             <!-- White Tee with Swipe -->
@@ -51,6 +52,56 @@
                 <button class="add-to-cart">Add to Cart</button>
                 <div class="swipe-hint">← swipe / click →</div>
             </div>
+        </div>
+    </section>
+
+    <!-- Lookbook Section - Gallery no text -->
+    <section id="lookbook" class="lookbook">
+        <h2>Lookbook</h2>
+        <div class="lookbook-grid">
+            <div class="lookbook-item">
+                <img src="images/look1.jpeg" alt="Look 1">
+            </div>
+            <div class="lookbook-item">
+                <img src="images/look2.jpeg" alt="Look 2">
+            </div>
+            <div class="lookbook-item">
+                <img src="images/look3.jpeg" alt="Look 3">
+            </div>
+            <div class="lookbook-item">
+                <img src="images/look4.jpeg" alt="Look 4">
+            </div>
+            <div class="lookbook-item">
+                <img src="images/look5.jpeg" alt="Look 5">
+            </div>
+            <div class="lookbook-item">
+                <img src="images/look6.jpeg" alt="Look 6">
+            </div>
+            <div class="lookbook-item">
+                <img src="images/look7.jpeg" alt="Look 7">
+            </div>
+            <div class="lookbook-item">
+                <img src="images/look8.jpeg" alt="Look 8">
+            </div>
+            <div class="lookbook-item">
+                <img src="images/look9.jpeg" alt="Look 9">
+            </div>
+            <div class="lookbook-item">
+                <img src="images/look10.jpeg" alt="Look 10">
+            </div>
+            <div class="lookbook-item">
+                <img src="images/look11.jpeg" alt="Look 11">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>📞 Contact Number: <a href="tel:+27663463222">066 346 3222</a></p>
+            <p>✉️ Email: <a href="mailto:stnd.procedure@gmail.com">stnd.procedure@gmail.com</a></p>
+            <p>📷 Instagram: <a href="https://instagram.com/stnd_za" target="_blank">@stnd_za</a></p>
         </div>
     </section>
 
