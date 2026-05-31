@@ -1,74 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>STND - Standard Procedure</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <img src="images/logo.jpeg" alt="STND Logo" class="logo">
-        <nav>
-            <a href="#about">About Us</a>
-            <a href="#lookbook">Lookbook</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <h2>NOT TREND PROCEDURE</h2>
-        <p>Deliveries Nationwide</p>
-        <button onclick="document.getElementById('lookbook').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="about-section">
-        <div class="about-story">
-            <p><strong>It started with a simple idea: why follow trends… when you can set the standard?</strong></p>
-            <p><strong>STND wasn't built for everyone. It was built for the ones who move different — the ones who don't wait for permission, the ones who turn everyday life into a statement.</strong></p>
-            <p><strong>Where we come from, nothing is handed to you. You earn your place. You build your name. And when you step out, what you wear isn't just style — it's identity.</strong></p>
-            <p><strong>STND stands for Standard Procedure — not the ordinary routine… but the code you live by.</strong></p>
-            <p><strong>Precision. Confidence. Discipline. Every piece is designed to reflect that mindset: clean, bold, and unapologetically elevated.</strong></p>
-            <p><strong>This is more than clothing. It's a uniform for people who know who they are — and don't need validation.</strong></p>
-            <p><strong>We don't chase hype. We create presence.</strong></p>
-            <p><strong>STND isn't what you wear. It's who you become.</strong></p>
-        </div>
-    </section>
-
-    <!-- Shop Section - Only Tees -->
-    <section id="shop" class="products">
-        <h2>Bestsellers</h2>
-        <div class="product-grid">
-            <!-- White Tee with Swipe -->
-            <div class="product">
-                <div class="slider-container" data-images='["images/white-front.jpeg", "images/white-back.jpeg"]'>
-                    <img class="slider-image" src="images/white-front.jpeg" alt="Classic White Tee">
-                    <button class="slider-prev">❮</button>
-                    <button class="slider-next">❯</button>
-                </div>
-                <h3>Classic White Tee</h3>
-                <p>R 450</p>
-                <button class="add-to-cart">Add to Cart</button>
-                <div class="swipe-hint">← swipe / click →</div>
-            </div>
-
-            <!-- Black Tee with Swipe -->
-            <div class="product">
-                <div class="slider-container" data-images='["images/blackFront.png", "images/blackBack.png"]'>
-                    <img class="slider-image" src="images/blackFront.png" alt="Classic Black Tee">
-                    <button class="slider-prev">❮</button>
-                    <button class="slider-next">❯</button>
-                </div>
-                <h3>Classic Black Tee</h3>
-                <p>R 450</p>
-                <button class="add-to-cart">Add to Cart</button>
-                <div class="swipe-hint">← swipe / click →</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lookbook Section - Images from root folder -->
+    <!-- Lookbook Section -->
     <section id="lookbook" class="lookbook">
         <h2>Lookbook</h2>
         <div class="lookbook-grid">
@@ -94,31 +24,13 @@
                 <img src="IMG_8848.JPG (1).jpeg" alt="Look 7">
             </div>
             <div class="lookbook-item">
-                <img src="IMG_8449.JPG (1).jpeg" alt="Look 8">
+                <img src="IMG_8849.JPG (1).jpeg" alt="Look 8">
             </div>
             <div class="lookbook-item">
                 <img src="IMG_8851.JPG (1).jpeg" alt="Look 9">
             </div>
             <div class="lookbook-item">
-                <img src="IMG_8552.JPG (1) (1).jpeg" alt="Look 10">
+                <img src="IMG_8852.JPG (1) (1).jpeg" alt="Look 10">
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p>📞 Contact Number: <a href="tel:+27663463222">066 346 3222</a></p>
-            <p>✉️ Email: <a href="mailto:stnd.procedure@gmail.com">stnd.procedure@gmail.com</a></p>
-            <p>📷 Instagram: <a href="https://instagram.com/stnd_za" target="_blank">@stnd_za</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 STND — Standard Procedure. Not trend procedure.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
